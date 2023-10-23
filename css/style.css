@@ -1,0 +1,83 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%); 
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 4px;
+    
+    background-image: url('../image/pattern-background-desktop.svg');
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;   
+}
+.card {
+    width: 450px;
+    box-shadow: 10px 10px 10px 5px rgb(191, 191, 196);
+    border-radius: 20px;
+}
+.card-top {
+    background-image: url(/image/illustration-hero.svg);
+    height: 190px;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.summar {
+    text-align: center;
+    padding: 20px 40px;
+}
+.container .summar > p {
+    color: rgb(172, 166, 158);
+}
+.annula {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: ghostwhite;
+}
+
+.annula .text h4 , .annula .text p{
+    line-height: 1;  
+}
+.btn {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn a {
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+.btn button {
+    cursor: pointer;
+    padding:12px;
+    border: none;
+    outline: none;
+    background: var(--Bright-blue);
+    color: #fff;
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* Change Color */
+.change {
+    text-decoration: underline;
+    
+}
